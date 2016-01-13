@@ -1,3 +1,6 @@
-from django.db import models
+from django.db import models, migrations
 
-# Create your models here.
+
+# 产品详情
+class Product(models.Model):
+	name = models.CharField(max_length=100)

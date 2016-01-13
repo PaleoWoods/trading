@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+{% load bootstrap3 %}
+{% load staticfiles %}
+<html {% if request.LANGUAGE_CODE %} lang="{{ request.LANGUAGE_CODE }}" {% endif %}>
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html"/>
+    <title>{% block bootstrap3_title %} {{ webname }} {% endblock %}</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+    {% if 'javascript_in_head'|bootstrap_setting %} {% bootstrap_javascript jquery=True %} {% endif %}
+    {% block bootstrap3_extra_head %} {% endblock %}
+
+</head>
+<script>
+    $('.dropdown-toggle').dropdown();
+</script>
+<body style="padding: 0; margin: auto;">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project</a>
+        </div>
+
+        <nav id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Qualification</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Service</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="">SignUp</a></li>
+                <li><a href="">SignIn</a></li>
+            </ul>
+        </nav>
+
+
+    </div>
+</nav>
+
+<div class="clearfix">
+    <img src="{% static "images/banner.jpg" %}" class="img-responsive" alt="Hello" >
+</div>
+
+
+<div class="container">
+    <table style="height: 100px; margin: 55px;">
+        <tr>
+            <td>
+                {% buttons %}
+                    <button type="submit" class="btn btn-primary">
+                        {% bootstrap_icon "star" %} Submit
+                    </button>
+                {% endbuttons %}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row ui-datepicker-group-middle">
+            <dl class="col-xs-3">
+                <dt>Product Category</dt>
+                <dd><a href="">Category 1</a></dd>
+                <dd><a href="">Category 2</a></dd>
+                <dd><a href="">Category 3</a></dd>
+                <dd><a href="">Category 4</a></dd>
+                <dd><a href="">Category 5</a></dd>
+                <dd><a href="">Category 6</a></dd>
+            </dl>
+            <dl class="col-xs-3">
+                <dt>Company</dt>
+                <dd><a href="">about us</a></dd>
+                <dd><a href="">News</a></dd>
+                <dd><a href="">Qualification</a></dd>
+                <dd><a href="">FAQ</a></dd>
+                <dd><a href="">Service</a></dd>
+            </dl>
+            <dl class="col-xs-3">
+                <dt>Feedback</dt>
+            </dl>
+            <dl class="col-xs-3">
+                <dt>Visit us</dt>
+                <dd><a href="">Facebook</a></dd>
+                <dd><a href="">Tweeter</a></dd>
+                <dd><a href="">Linked in</a></dd>
+                <dd><a href="">Wechat</a></dd>
+                <dd><a href="">Skype</a></dd>
+                <dd><a href="">What's app</a></dd>
+            </dl>
+            {#            <dl class="col-sm-4">#}
+            {#                <dt>some other</dt>#}
+            {##}
+            {#            </dl>#}
+
+        </div>
+
+        <div class="copyright">
+            "
+            Copyright 2012-2013 Joney Limited. All right reserved."
+            <br>
+            鄂ICP备14001754号-1
+        </div>
+    </div>
+</footer>
+</body>
+</html>
