@@ -1,99 +1,46 @@
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: #fff;
-
-}
-
-div {
-    display: block;
-}
-
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-
-ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-}
-
-ol, ul {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.container {
-    width: 954px;
-    padding: 0;
-    margin: 0 auto;
-}
-
-.container > .navbar-collapse, .container > .navbar-header {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.navbar-static-top .navbar-collapse {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-}
-
-.navbar-collapse {
-    width: auto;
-    border-top: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
 .navbar {
-    position: relative;
     min-height: 50px;
-    border: 1px solid transparent;
+    margin-bottom: 20px;
+    border: 0px solid transparent;
 }
 
-.navbar-nav {
-    float: left;
-    margin: 0;
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
 }
 
-.nav {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #fff;
+    background-color: transparent;
 }
 
-.navbar-nav > li {
-    float: left;
+.navbar-default .navbar-brand {
+    color: #fff;
 }
 
-.nav > li {
-    position: relative;
-    display: block;
+.main-color {
+    background-color: grey;
 }
 
-:after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+.col-xs-3 > dd > a {
+    color: #fff;
+}
+.col-xs-3 > dd {
+    color: #fff;
+    padding: 1px 1px;
 }
 
-.pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
-    display: table;
-    content: " ";
+.header-img-padding {
+    padding-top: 50px;
+}
+
+.col-xs-3 > dt {
+    color: white;
+    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-size: 18px;
+    padding: 15px 3px 5px 3px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 10px;
 }

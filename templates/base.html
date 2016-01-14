@@ -8,6 +8,7 @@
     {% bootstrap_css %}
     {% bootstrap_javascript %}
 
+    <link href=" {% static "css/style.css" %} " type="text/css" rel="stylesheet">
     {% if 'javascript_in_head'|bootstrap_setting %} {% bootstrap_javascript jquery=True %} {% endif %}
     {% block bootstrap3_extra_head %} {% endblock %}
 
@@ -16,7 +17,7 @@
     $('.dropdown-toggle').dropdown();
 </script>
 <body style="padding: 0; margin: auto;">
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top main-color">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar"
@@ -60,31 +61,85 @@
                 <li><a href="">SignIn</a></li>
             </ul>
         </nav>
-
-
     </div>
 </nav>
 
-<div class="clearfix">
-    <img src="{% static "images/banner.jpg" %}" class="img-responsive" alt="Hello" >
+<header class="clearfix subhead header-img-padding">
+    <img src="{% static "images/banner.jpg" %}" class="img-responsive" alt="Hello">
+</header>
+
+<div class="container" style="padding-bottom: 20px;">
+    <div class="row">
+        <div class="col-md-3" role="complementary">
+            <div class="bs-docs-sidebar hidden-pring hidden-xs hidden-sm">
+                <div style="padding: 10px;">
+                    <ul class="nav bs-docs-sidenav">
+                        <li class="" style="text-align: center"><h4>Products</h4></li>
+                        <li>
+                            <ul class="nav">
+                                <li class=""><a href="">HTML5 doctype</a></li>
+                                <li class=""><a href="">Mobile first</a></li>
+                                <li class=""><a href="">Typography and links</a></li>
+                                <li class=""><a href="">Normalize.css</a></li>
+                                <li class=""><a href="">Containers</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div style="padding: 10px;">
+                    <ul class="nav bs-docs-sidenav">
+                        <li class="" style="text-align: center"><h4>Instructions</h4></li>
+                        <li>
+                            <ul class="nav">
+                                <li class=""><a href="">HTML5 doctype</a></li>
+                                <li class=""><a href="">Mobile first</a></li>
+                                <li class=""><a href="">Typography and links</a></li>
+                                <li class=""><a href="">Normalize.css</a></li>
+                                <li class=""><a href="">Containers</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav bs-docs-sidenav">
+                    <div style="padding: 10px">
+                        <li>
+                            <ul class="nav">
+                                <li class="active">
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="exampleInputName2"
+                                                   placeholder="Search Product">
+                                        </div>
+                                        &nbsp;
+                                        <button type="submit" class="btn btn-default">
+                                            {% bootstrap_icon "search" %}
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-md-9" role="main">
+            <div>
+                {#                {% buttons %}#}
+                {#                    <button type="submit" class="btn btn-primary btn-sm">#}
+                {#                        {% bootstrap_icon "star" %} Submit#}
+                {#                    </button>#}
+                {#                {% endbuttons %}#}
+            </div>
+        </div>
+    </div>
+    <div class="clearfix">
+
+    </div>
 </div>
 
 
-<div class="container">
-    <table style="height: 100px; margin: 55px;">
-        <tr>
-            <td>
-                {% buttons %}
-                    <button type="submit" class="btn btn-primary">
-                        {% bootstrap_icon "star" %} Submit
-                    </button>
-                {% endbuttons %}
-            </td>
-        </tr>
-    </table>
-</div>
-
-<footer id="footer">
+<footer id="footer" class="main-color" style="padding-top: inherit">
     <div class="container">
         <div class="row ui-datepicker-group-middle">
             <dl class="col-xs-3">
@@ -122,14 +177,13 @@
             {#            </dl>#}
 
         </div>
-
-        <div class="copyright">
-            "
-            Copyright 2012-2013 Joney Limited. All right reserved."
-            <br>
-            鄂ICP备14001754号-1
-        </div>
     </div>
 </footer>
+<div class="copyright" style="text-align: center">
+    "
+    Copyright 2014-2016 Joney Limited. All right reserved."
+    <br>
+    京ICP备14001754号-1
+</div>
 </body>
 </html>
