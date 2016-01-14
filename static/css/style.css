@@ -21,6 +21,10 @@
     background-color: grey;
 }
 
+.body {
+    background-color: #f1c8d0;
+}
+
 .col-xs-3 > dd > a {
     color: #fff;
 }
@@ -35,7 +39,7 @@
 
 .col-xs-3 > dt {
     color: white;
-    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-family: 'Times New Roman', 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
     font-size: 18px;
     padding: 15px 3px 5px 3px;
 }

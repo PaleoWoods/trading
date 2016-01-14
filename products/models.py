@@ -5,6 +5,7 @@ from django.db import models, migrations
 class Products(models.Model):
 	name = models.CharField(max_length=100)
 	category = models.IntegerField()
+	pictures = models.FilePathField()
 	created_at = models.DateTimeField()
 	updated_at = models.DateTimeField()
 
@@ -14,3 +15,4 @@ class PDTCategory(models.Model):
 	name = models.CharField(max_length=100)
 	created_at = models.DateTimeField()
 	updated_at = models.DateTimeField()
+	position = models.IntegerField()
