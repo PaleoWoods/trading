@@ -1,0 +1,60 @@
+{% load bootstrap3 %}
+{% block sider_nav %}
+    <div class="col-md-3" role="complementary">
+        <div class="bs-docs-sidebar hidden-pring hidden-xs hidden-sm">
+            <div style="padding: 10px;">
+                <ul class="nav bs-docs-sidenav">
+                    <li class="" style="text-align: center"><h4>Products</h4></li>
+                    <li>
+                        <ul class="nav">
+                            <li class=""><a href="">HTML5 doctype</a></li>
+                            <li class=""><a href="">Mobile first</a></li>
+                            <li class=""><a href="">Typography and links</a></li>
+                            <li class=""><a href="">Normalize.css</a></li>
+                            <li class=""><a href="">Containers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div style="padding: 10px;">
+                <ul class="nav bs-docs-sidenav">
+                    <li class="" style="text-align: center"><h4>Instructions</h4></li>
+                    <li>
+                        <ul class="nav">
+                            <li class=""><a href="">HTML5 doctype</a></li>
+                            <li class=""><a href="">Mobile first</a></li>
+                            <li class=""><a href="">Typography and links</a></li>
+                            <li class=""><a href="">Normalize.css</a></li>
+                            <li class=""><a href="">Containers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav bs-docs-sidenav">
+                <div style="padding: 5px">
+                    <li>
+                        <ul class="nav">
+                            <li class="active">
+                                <form class="navbar-form" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="searchProducts"
+                                               placeholder="Search Product">
+
+                                        <div class="input-group-btn">
+                                            <button type="submit" class="btn btn-default">
+                                                {% bootstrap_icon "search" %}
+                                                {# <i class="glyphicon glyphicon-search"></i>#}
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+
+        </div>
+    </div>
+{% endblock %}

@@ -1,10 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% load bootstrap3 %}
+{% block footer %}
+    <footer id="footer" class="main-color" style="padding-top: inherit">
+        <div class="container">
+            <div class="row ui-datepicker-group-middle">
+                <dl class="col-xs-3">
+                    <dt>Product Category</dt>
+                    <dd><a href="">Category 1</a></dd>
+                    <dd><a href="">Category 2</a></dd>
+                    <dd><a href="">Category 3</a></dd>
+                    <dd><a href="">Category 4</a></dd>
+                    <dd><a href="">Category 5</a></dd>
+                    <dd><a href="">Category 6</a></dd>
+                </dl>
+                <dl class="col-xs-3">
+                    <dt>Company</dt>
+                    <dd><a href="">about us</a></dd>
+                    <dd><a href="">News</a></dd>
+                    <dd><a href="">Qualification</a></dd>
+                    <dd><a href="">FAQ</a></dd>
+                    <dd><a href="">Service</a></dd>
+                </dl>
+                <dl class="col-xs-3">
+                    <dt>Feedback</dt>
+                </dl>
+                <dl class="col-xs-3">
+                    <dt>Visit us</dt>
+                    <dd><a href="">Facebook</a></dd>
+                    <dd><a href="">Tweeter</a></dd>
+                    <dd><a href="">Linked in</a></dd>
+                    <dd><a href="">Wechat</a></dd>
+                    <dd><a href="">Skype</a></dd>
+                    <dd><a href="">What's app</a></dd>
+                </dl>
+                {#            <dl class="col-sm-4">#}
+                {#                <dt>some other</dt>#}
+                {##}
+                {#            </dl>#}
 
-</body>
-</html>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright" style="text-align: center">
+
+        Copyright 2014-2016 Joney Limited. All right reserved.
+        <br>
+        京ICP备14001754号-1
+    </div>
+{% endblock %}
