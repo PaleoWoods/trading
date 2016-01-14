@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block main %}
+    <div class="clearfix" style="padding: 100px 0; text-align: center">
+        <figure class="figure"><img src="https://sf-static.b0.upaiyun.com/v-56810165/global/img/500.svg" alt="天啊">
+        </figure>
 
-</body>
-</html>
+        <h1>天啊！</h1>
+
+        <div class="p">HTTP 500……<br>服务器君居然出现错误了!!</div>
+
+        <div class="row clearfix" style="text-align: center">
+            <div class="col-xs-1-offset4">
+                <button type="button" onclick="javascript:history.back()" class="btn btn-default main-color">
+                    上一页
+                </button>
+                <button type="button" onclick="window.location.href='/'" class="btn btn-default main-color">
+                    回首页
+                </button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,7 +1,7 @@
 .navbar {
     min-height: 50px;
     margin-bottom: 20px;
-    border: 0px solid transparent;
+    border: 0 solid transparent;
 }
 
 .navbar-default .navbar-nav > li > a {
