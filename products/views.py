@@ -4,4 +4,6 @@ from django.http import HttpResponse
 
 
 def product_index(request):
-	return HttpResponse("This is a product index")
+	raise Exception
+
+# return HttpResponse("This is a product index")
