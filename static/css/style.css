@@ -6,6 +6,15 @@
 
 .navbar-default .navbar-nav > li > a {
     color: #fff;
+    background-color: grey;
+}
+
+.nav > li > a {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;;
 }
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
@@ -37,6 +46,10 @@
 
 .header-img-padding {
     padding-top: 50px;
+}
+
+.list-group {
+    margin-bottom: 0;
 }
 
 .col-xs-3 > dt {

@@ -1,6 +1,6 @@
 {% load bootstrap3 %}
 {% block top_nav %}
-    <nav class="navbar navbar-default navbar-fixed-top main-color" role="navigation">
+    <header class="navbar main-color bs-docs-nav navbar-fixed-top" role="banner">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar"
@@ -25,9 +25,11 @@
                     <li><a href="">About us</a></li>
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                           aria-haspopup="true"
-                           aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false" data-hover="dropdown">
+                            Dropdown
+                            <span class="caret"></span>
+                        </a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -46,5 +48,5 @@
                 </ul>
             </nav>
         </div>
-    </nav>
+    </header>
 {% endblock %}
